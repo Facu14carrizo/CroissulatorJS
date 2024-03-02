@@ -1,0 +1,155 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: lightsalmon;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; /* Evita que las medialunas lluviosas afecten el scroll */
+}
+
+/* Estilos de la calculadora */
+.calculadora {
+    background-color: tomato;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 450px; 
+    height: 400px;
+    position: relative; /* Asegura que el contenedor de partículas se superponga correctamente */
+}
+
+/* Estilos de la pantalla de resultados */
+.result-display {
+    background-color: tomato;
+    width: 100%;
+    height: 25%;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    padding: 15px;
+    border: none;
+    text-align: right;
+    outline: none;
+}
+
+/* Estilos de los botones */
+.botones-numericos,
+.operadores-y-resultados,
+.operadores {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+.number,
+.operator,
+.clear,
+.undo,
+.mystery {
+    font-size: 1.5em;
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.operatori,
+.clear,
+.mystery {
+    font-size: 1.5em;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.number:hover,
+.operator:hover,
+.clear:hover,
+.undo:hover,
+.mystery:hover {
+    background-color: orangered;
+}
+
+.number:active,
+.operator:active,
+.clear:active,
+.undo:active,
+.mystery:active {
+    transform: translateY(5px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#mystery {
+    background-color: #6e4d068e; /* Color dorado similar al de la medialuna */
+    color: black;
+    border: none;
+}
+
+.number {
+    background-color: orange;
+    color: rgb(50, 50, 50);
+}
+
+.operator {
+    background-color: #f44336;
+    color: #edebeb;
+}
+
+.clear {
+    background-color: rgb(213, 6, 6);
+    color: #edebeb;
+}
+
+.undo {
+    background-color: chocolate;
+    color: #edebeb;
+}
+
+.darklight {
+    background-color: black;
+    color: #edebeb;
+}
+
+.clear:last-child {
+    grid-column: span 2;
+}
+
+#btnEquals {
+    background-color: #008CBA;
+    color: #fff;
+}
+
+#btnEquals:hover {
+    background-color: #005684;
+}
+
+#darkmode {
+    background-color: black;
+    color: #edebeb;
+}
+
+#darkmode:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Ajuste para evitar que la barra de resultados se salga de la calculadora */
+#resultadoFinal {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Estilos para el contenedor de partículas */
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Asegura que esté detrás de otros elementos */
+}
