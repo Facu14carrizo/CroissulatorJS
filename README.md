@@ -21,7 +21,8 @@ The **Croissulator** is an interactive calculator that not only helps you perfor
 
 ## Credits
 Author: Facu14Carrizo
-Inspiration: This project was inspired by the combination of cooking and calculator functionality.
+
+This project was inspired by the combination of cooking and calculator functionality.
 
 ## License
 This project is licensed under the MIT License.
