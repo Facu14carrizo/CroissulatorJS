@@ -1,6 +1,6 @@
 # Croissulator
 ![Operation of Croissulator](Assets/Croissulator.gif)
-
+ 
 Welcome to the **Croissant Calculator**! This is a fun and unique project that combines the functionality of a calculator with a delicious twist: when you press the croissant button, croissants start raining down on the screen!
 
 ## Description
